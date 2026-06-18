@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Internship Confirmation Form
+  </title>
+</head>
+<body>
+  <h2>
+    Internship Confirmation Form
+  </h2>
+  <form>
+    <table>
+     
+      <tr>
+        <td>
+          <label for="name">Student Name:
+          </label>
+        </td>
+        <td>
+          <input type="text" id="name" name="name" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email Address:
+          </label>
+        </td>
+        <td>
+          <input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td>
+          Preferred Internship Type:
+        </td>
+        <td>
+          <input type="radio" id="onsite" name="internshipType" value="On-Site" required>
+          <label for="onsite">On-Site
+          </label>
+          <input type="radio" id="remote" name="internshipType" value="Remote">
+          <label for="remote">Remote
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="duration">Internship Duration:
+        </label>
+      </td>
+        <td>
+          <select id="duration" name="duration" required>
+            <option value="6 Weeks">6 Weeks
+            </option>
+            <option value="3 Months">3 Months
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Skills of Interest:</td>
+        <td>
+          <input type="checkbox" id="webdev" name="skills" value="Web Development">
+          <label for="webdev">Web Development
+          </label>
+          <br>
+          <input type="checkbox" id="data" name="skills" value="Data Analysis">
+          <label for="data">Data Analysis
+          </label>
+          <br>
+          <input type="checkbox" id="mobile" name="skills" value="Mobile Apps">
+          <label for="mobile">Mobile Apps
+
+          </label>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <button type="submit">Submit</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
