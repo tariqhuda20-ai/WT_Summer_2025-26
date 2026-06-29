@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>CSS LAB TASK01</title>
+    
+</head>
+<STYLE>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0c1116;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004080;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #181717;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin-top: 15px;
+        }
+    </style>
+ <body>
+    <header>
+        <h1> <CENTER>WELCOME TO SERVICE PORTAL</CENTER></h1>
+    
+    </header>
+      
+
+      
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+       
+
+        <section>
+            <h2><CENTER>Service Request Form</CENTER></section>h2>
+            <form>
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="id">Student ID:</label>
+                <input type="text" id="id" name="id" maxlength="10" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="service">Service Type:</label>
+                <select id="service" name="service">
+                    <option value="transcript">Transcript Request</option>
+                    <option value="idcard">ID Card Issue</option>
+                    <option value="inquiry">General Inquiry</option>
+                </select><br><br>
+
+                Urgency Level:
+                <input type="radio" name="urgency" value="low"> Low
+                <input type="radio" name="urgency" value="medium"> Medium
+                <input type="radio" name="urgency" value="high"> High
+
+                <label for="details">Additional Details:</label><br>
+                <textarea id="details" name="details"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Affairs Department</p>
+    </footer>
+</body>
+</html>
+      
